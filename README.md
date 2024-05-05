@@ -12,20 +12,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Active Directory Domain Services
 - PowerShell
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
+- Ubuntu 20.4
 - Windows 10 (21H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1
+- I set up two Azure virtual machines, one running Windows 10 and the other running Linux. Both are organized under the same resource group named AD-LAB and share a virtual network called VM1-vent.
+- <img src="https://i.imgur.com/cyNFPtC.png" alt="Microsoft Active Directory Logo"/>
 - Step 2
+- I used Remote Desktop Protocol (RDP) to access my Windows VM, where I downloaded Wireshark, a network protocol analyzer.
+- <img src="https://i.imgur.com/o95g8Z0.png" alt="Microsoft Active Directory Logo"/>
 - Step 3
+- To test the connectivity of my Linux VM, I used the ping command to send packets to its private IP address, 10.0.0.5, and check for echo replies.
+- <img src="https://i.imgur.com/rYekHg0.png" alt="Microsoft Active Directory Logo"/>
 - Step 4
+- 
+- 
 
 <h2>Deployment and Configuration Steps</h2>
 
