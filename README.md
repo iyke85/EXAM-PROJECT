@@ -28,7 +28,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - I used Remote Desktop Protocol (RDP) to access my Windows VM, where I downloaded Wireshark, a network protocol analyzer.
 - <img src="https://i.imgur.com/o95g8Z0.png" alt="Microsoft Active Directory Logo"/>
 - Step 3
-- To test the connectivity of my Linux VM, I used the ping command to send packets to its private IP address, 10.0.0.5, and check for echo replies.
+- To check the connectivity of my Linux VM, I used the ping command to send ICMP packets to its private IP address, 10.0.0.5. I then filtered for ICMP in Wireshark to analyze the packet exchange.
 - <img src="https://i.imgur.com/rYekHg0.png" alt="Microsoft Active Directory Logo"/>
 - Step 4
 - 
