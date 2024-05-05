@@ -31,6 +31,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - To check the connectivity of my Linux VM, I used the ping command to send ICMP packets to its private IP address, 10.0.0.5. I then filtered for ICMP in Wireshark to analyze the packet exchange.
 - <img src="https://i.imgur.com/rYekHg0.png" alt="Microsoft Active Directory Logo"/>
 - Step 4
+- I returned to the network security group (firewall) settings of my Linux VM and created an inbound rule to block ICMP traffic, to observe the effects on connectivity. which resulted in connectivity timeout and packet loss. 
+- <img src="https://i.imgur.com/XlKBSK8.png" alt="Microsoft Active Directory Logo"/>
 - 
 - 
 
