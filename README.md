@@ -16,8 +16,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Operating Systems Used </h2>
 
-- Ubuntu 20.4
 - Windows 10 (21H2)
+- Ubuntu 20.4
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -31,8 +31,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - To check the connectivity of my Linux VM, I used the ping command to send ICMP packets to its private IP address, 10.0.0.5. I then filtered for ICMP in Wireshark to analyze the packet exchange.
 - <img src="https://i.imgur.com/rYekHg0.png" alt="Microsoft Active Directory Logo"/>
 - Step 4
-- I returned to the network security group (firewall) settings of my Linux VM and created an inbound rule to block ICMP traffic, to observe the effects on connectivity.which resulted in connectivity timeout and packet loss. 
+- I returned to the network security group (firewall) settings of my Linux VM. I created an inbound rule to block ICMP traffic and observe the effects on connectivity, resulting in connectivity timeout and packet loss.
+- <img src="https://i.imgur.com/PErEHsW.png" alt="Microsoft Active Directory Logo"/>
 - <img src="https://i.imgur.com/XlKBSK8.png" alt="Microsoft Active Directory Logo"/>
+- Step 5
+-After observing the effects of blocking ICMP traffic, I modified the inbound rule in the network security group settings for my Linux VM to allow ICMP traffic again. Then, I conducted a continuous ping to further monitor the echo requests and responses.
+- <img src="https://i.imgur.com/49MktQd.png" alt="Microsoft Active Directory Logo"/>
+- <img src="https://i.imgur.com/M4XRDcs.png" alt="Microsoft Active Directory Logo"/>
+
+-  Step 6
+-  Furthermore, I used SSH (Secure Shell Protocol) to remotely access my Linux VM, allowing me to analyze the network connection in more detail.
+-  <img src="https://i.imgur.com/auEcVXp.png" alt="Microsoft Active Directory Logo"/>
+-  Step 7
+-  I ran the nslookup command to query the DNS records for amazon.com and facebook.com, observing the responses to understand the DNS protocol behavior.
+-  <img src="https://i.imgur.com/ksyPXUZ.png" alt="Microsoft Active Directory Logo"/>
+-  
 - 
 - 
 
