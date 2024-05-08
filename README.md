@@ -26,7 +26,7 @@ In this project, I explored the configuration and connectivity of two virtual ma
  I used Remote Desktop Protocol (RDP) to access my Windows VM, where I downloaded Wireshark, a network protocol analyzer.
   <img src="https://i.imgur.com/o95g8Z0.png" alt="Microsoft Active Directory Logo"/>
 - Step 3:
-- To check the connectivity of my Linux VM, I used the ping command to send ICMP packets to its private IP address, 10.0.0.5. I then filtered for ICMP in Wireshark to analyze the packet exchange.
+- To check the connectivity of my Linux VM,On my Windows 10 VM PowerShell, I used the ping command to send ICMP packets to its private IP address, 10.0.0.5. I then filtered for ICMP in Wireshark to analyze the packet exchange.
 - <img src="https://i.imgur.com/rYekHg0.png" alt="Microsoft Active Directory Logo"/>
 - Step 4:
  I returned to the network security group (firewall) settings of my Linux VM. I created an inbound rule to block ICMP traffic and observe the effects on connectivity, resulting in connectivity timeout and packet loss.
