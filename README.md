@@ -8,7 +8,7 @@ In this project, I explored the configuration and connectivity of two virtual ma
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - PowerShell
 
